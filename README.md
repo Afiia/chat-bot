@@ -1,2 +1,15 @@
-# chat-bot
-Lumina AI is a responsive chat app built with React and Tailwind CSS. It adapts its tone to each message, casual for playful questions and professional for technical ones. Users can drag and drop images, PDFs and code files, and Lumina remembers the whole conversation. It connects to real AI models like Claude and Gemini, with an offline demo mode.
+# Lumina AI
+
+1. Install Node.js 18+ from https://nodejs.org
+2. Get a free Gemini key at https://aistudio.google.com/apikey
+3. Open the `.env` file and paste your key(s) next to the matching provider name (e.g. `VITE_GEMINI_KEY=`)
+4. In this folder run:
+
+       npm install
+       npm run dev
+
+5. Open the URL printed in the terminal (usually http://localhost:5173)
+
+Without a key the app still runs using a scripted offline engine.
+Note: the key is bundled into the frontend, so keep this for local demos and
+do not deploy it publicly. A public version needs a small backend that holds the key.
